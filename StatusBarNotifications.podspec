@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'StatusBarNotifications'
-  s.version          = '0.6.0'
+  s.version          = '0.7.0'
   s.summary          = 'Display notifications in iOS Status Bar.'
 
 # This description is used to generate tags and improve search results.
