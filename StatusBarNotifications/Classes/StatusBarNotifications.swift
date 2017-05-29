@@ -8,6 +8,14 @@
 
 import UIKit
 
+/**
+ *  Animations Enum
+ *
+ *  - parameter fade
+ *  - parameter slideFromTop
+ *  - parameter slideFromBottom
+ *  - parameter slideFromLeft
+ */
 public enum Animation {
     case fade
     case slideFromTop
@@ -15,7 +23,19 @@ public enum Animation {
     case slideFromLeft
 }
 
+/**
+ *  Main StatusBarNotifications Class
+ *
+ */
 public class StatusBarNotifications: NSObject {
+    /**
+     *  Show method
+     *
+     *  - parameter withText: String to show
+     *  - parameter animation: animation to use
+     *  - parameter backgroundColor: color of notification background (default blue)
+     *  - parameter textColor: color of text (default white)
+     */
     public static func show(withText: String, animation: Animation = .fade, backgroundColor: UIColor = .blue, textColor: UIColor = .white) {
         if let statusBar = UIApplication.shared.statusBarView {
             statusBar.clipsToBounds = true
@@ -82,6 +102,11 @@ public class StatusBarNotifications: NSObject {
     }
 }
 
+/**
+ *  Extension to get statusBar object
+ *
+ *  - return: statusBar UIView
+ */
 extension UIApplication {
     var statusBarView: UIView? {
         return value(forKey: "statusBar") as? UIView

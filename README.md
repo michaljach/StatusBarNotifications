@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/StatusBarNotifications.svg?style=flat)](http://cocoapods.org/pods/StatusBarNotifications)
 [![Platform](https://img.shields.io/cocoapods/p/StatusBarNotifications.svg?style=flat)](http://cocoapods.org/pods/StatusBarNotifications)
 
+iOS Status Bar notifications written in Swift 3. Easily change appearance and text in UIStatusBar.
+
 ## Example
 
 ![StatusBarNotifications](http://i.imgur.com/lEKJbvC.gif)
@@ -13,6 +15,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- CocoaPods
+- iOS 8.3
+- Xcode
 
 ## Installation
 
@@ -32,6 +37,19 @@ import StatusBarNotifications
 Then simply call show method anywhere You want:
 ```ruby
 StatusBarNotifications.show(withText: "Hello from StatusBar!", animation: .slideFromTop)
+```
+You can set custom background color and text color for each notification:
+```ruby
+StatusBarNotifications.show(withText: "Hello from StatusBar!", animation: .slideFromTop, backgroundColor: .red, textColor: .white)
+```
+
+# Available animations
+
+```ruby
+.fade
+.slideFromTop
+.slideFromBottom
+.slideFromLeft
 ```
 
 ## Author
