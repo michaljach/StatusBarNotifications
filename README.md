@@ -9,7 +9,7 @@ iOS Status Bar notifications written in Swift 3. Easily change appearance and te
 
 ## Example
 
-![StatusBarNotifications](http://i.imgur.com/lEKJbvC.gif)
+![StatusBarNotifications](http://i.imgur.com/kAjclty.gif)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
